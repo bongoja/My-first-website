@@ -1,0 +1,201 @@
+/* -------style ogólne-------- */
+* {
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+.clearfix::before,
+.clearfix::after,
+.row::before,
+.row::after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+/* głowny kolor : #24baa0
+   kolor szary #c2c2c2         */
+
+.container {
+  margin: 0 auto;
+  border: 1px solid red;
+  max-width: 1054px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* -------logo-------- */
+
+.logospec {
+color: white;
+text-transform: uppercase;
+}
+
+span {
+  color: #24baa0;
+}
+
+/* -------header-------- */
+
+.header {
+  background-color: black;
+  height: 40px;
+}
+
+.menu {
+  color: white;
+  font-weight: 1000;
+}
+
+
+.logo, .menu {
+  float: left;
+  width: 50%;
+}
+
+.menu > ul > li {
+    float: right;
+    margin-right: 48px;
+
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu5 {
+  position: relative;
+}
+
+.li {
+  position: absolute;
+
+
+}
+/* -------description-------- */
+
+.description {
+background: #f2f5f6;
+background: -moz-linear-gradient(top, #f2f5f6 0%, #c6c9ce 83%);
+background: -webkit-linear-gradient(top, #f2f5f6 0%,#c6c9ce 83%);
+background: linear-gradient(to bottom, #f2f5f6 0%,#c6c9ce 83%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c6c9ce',GradientType=0 );
+
+}
+
+.fotel, .opisfotela {
+  width: 50%;
+  float: left;
+}
+
+.fotel {
+
+}
+
+.opisfotela {
+padding-right: 200px;
+text-align: center;
+
+
+}
+
+h1 {
+  color: black;
+  text-transform: uppercase;
+  margin-top: 52px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.button {
+  color: white;
+  border-radius: 5px;
+  background-color: #24baa0;
+  width: 300px;
+  padding: 15px 15px;
+  text-transform: uppercase;
+}
+
+
+/* -------photos-------- */
+
+.photos {
+
+}
+
+.photo1, .photo2, .text3 {
+  width: 33.3%;
+  float: left;
+}
+
+
+.photo1, .photo2 {
+  position: relative;
+}
+.photo1 {
+
+
+}
+
+
+.photo2 {
+
+
+}
+
+
+.text3 {
+
+
+}
+
+.pasek1, .pasek2 {
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 93.8555%;
+  padding-left: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  position: relative;
+}
+
+
+.bold::after {
+  width: 140px;
+  height: 5px;
+  background-color: #24baa0;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  bottom: 10px;
+  left: 8px;
+
+}
+/* -------pricelist-------- */
+
+.pricelist {
+
+}
+/* -------formular-------- */
+
+.formualar {
+
+}
+
+/* -------footer-------- */
+
+.footer {
+
+}
