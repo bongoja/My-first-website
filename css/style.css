@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: "Raleway";
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix::before,
@@ -18,8 +20,9 @@
 
 .container {
   margin: 0 auto;
-  border: 1px solid red;
-  max-width: 1054px;
+  /*border: 1px solid red;*/
+  max-width: 1200px;
+  padding-top: 20px;
 }
 
 a {
@@ -32,6 +35,7 @@ a {
 .logospec {
 color: white;
 text-transform: uppercase;
+padding-left: 48px;
 }
 
 span {
@@ -74,7 +78,10 @@ li {
 .li {
   position: absolute;
 
+}
 
+.row {
+  margin-top: -10px;
 }
 /* -------description-------- */
 
@@ -88,7 +95,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', end
 }
 
 .fotel, .opisfotela {
-  width: 50%;
+  width: 40%;
   float: left;
 }
 
@@ -96,8 +103,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', end
 
 }
 
+.button-left, .button-right {
+  width: 10%;
+  font-size: 54px;
+  float: left;
+  padding-top: 80px;
+  font-weight: lighter;
+}
+
+.button-right p {
+  display: inline-block;
+  float: right;
+}
+
 .opisfotela {
-padding-right: 200px;
+padding-right: 100px;
 text-align: center;
 
 
@@ -106,9 +126,12 @@ text-align: center;
 h1 {
   color: black;
   text-transform: uppercase;
-  margin-top: 52px;
+  margin-top: 56px;
   text-align: center;
+  letter-spacing: 2px;
+
 }
+
 
 h2 {
   font-size: 14px;
@@ -121,42 +144,47 @@ h2 {
   border-radius: 5px;
   background-color: #24baa0;
   width: 300px;
-  padding: 15px 15px;
+  padding: 15px 33px;
   text-transform: uppercase;
 }
 
 
+
+
+/*-------test-----*/
+
+.test {
+width: 1200px;
+}
+
 /* -------photos-------- */
 
-.photos {
 
+.photos {
+margin: 10px 20px 60px;
 }
 
 .photo1, .photo2, .text3 {
-  width: 33.3%;
   float: left;
+  padding: 0 13px;
+  margin: 0 13px;
+
 }
 
+.photo1, .photo2, {
+  width: 329px;
+  float: left;
+  margin: 0 13px;
+}
+
+.text3 {
+  width: 338px;
+}
 
 .photo1, .photo2 {
   position: relative;
 }
-.photo1 {
 
-
-}
-
-
-.photo2 {
-
-
-}
-
-
-.text3 {
-
-
-}
 
 .pasek1, .pasek2 {
   position: absolute;
@@ -164,6 +192,8 @@ h2 {
   background-color: rgba(255, 255, 255, 0.3);
   width: 93.8555%;
   padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .bold {
@@ -179,13 +209,112 @@ h2 {
   position: absolute;
   z-index: 2;
   content: "";
-  bottom: 10px;
-  left: 8px;
+  bottom: -4px;
+  left: 0px;
 
+}
+
+.text3 {
+  border: 1px solid grey;
+  padding: 38px 25px;
+}
+
+.text3 p {
+  margin-bottom: 10px;
+}
+
+
+.text3 p:nth-child(2) {
+  margin-bottom: 30px;
 }
 /* -------pricelist-------- */
 
 .pricelist {
+  background-color: rgba(194, 194, 194, 0.3)
+
+}
+
+.basic-plan, .standard-plan, .advance-plan {
+  width: 326px;
+  height: 497px;
+  float: left;
+  margin: 150px 27px 75px;
+
+}
+
+.basic-plan, .advance-plan {
+  border: 1px solid #c2c2c2 ;
+  border-radius: 3px;
+  background-color: rgba(194, 194, 194, 0.1);
+
+
+}
+
+.standard-plan {
+  background-color: #24baa0;
+  border: 1px solid #24baa0;
+  border-radius: 3px;
+}
+.pricelist-1 {
+  position: absolute;
+  left: 147px;
+}
+
+.circle-1 {
+  width: 127px;
+  height: 127px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.circle-1 p {
+  text-align: center;
+  padding-top: 28px;
+  font-size: 49px;
+}
+
+.circle-2 {
+  width: 127px;
+  height: 127px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.circle-2 p {
+  text-align: center;
+  padding-top: 28px;
+  font-size: 49px;
+}
+
+.circle-3 {
+  width: 127px;
+  height: 127px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.circle-3 p {
+  text-align: center;
+  padding-top: 28px;
+  font-size: 49px;
+}
+
+.colors-1 li:nth-child(1) {
+
+}
+
+.colors-1 li:nth-child(2) {
+
+}
+
+.colors-2 li:nth-child(1) {
+
+}
+
+.colors-2 li:nth-child(2) {
 
 }
 /* -------formular-------- */
