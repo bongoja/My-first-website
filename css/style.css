@@ -1,9 +1,17 @@
 /* -------style ogólne-------- */
+
+
 * {
   box-sizing: border-box;
   font-family: "Raleway";
   margin: 0;
   padding: 0;
+  /*width: 1200px;*/
+
+}
+
+input {
+  border-style: solid;
 }
 
 .clearfix::before,
@@ -44,6 +52,8 @@ span {
 
 /* -------header-------- */
 
+
+
 .header {
   background-color: black;
   height: 40px;
@@ -66,7 +76,7 @@ span {
 
 }
 
-li {
+.menu li {
   list-style: none;
   text-transform: uppercase;
 }
@@ -85,6 +95,17 @@ li {
 }
 /* -------description-------- */
 
+h2 {
+  font-family: Raleway;
+color:  #000000;
+font-size: 14px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 400;
+line-height: 21.37px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
 .description {
 background: #f2f5f6;
 background: -moz-linear-gradient(top, #f2f5f6 0%, #c6c9ce 83%);
@@ -94,13 +115,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', end
 
 }
 
-.fotel, .opisfotela {
-  width: 40%;
+.fotel {
+
   float: left;
 }
 
 .fotel {
-
+  width: 32%;
+  margin-left: -80px;
 }
 
 .button-left, .button-right {
@@ -111,43 +133,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', end
   font-weight: lighter;
 }
 
+.button-right {
+  /*padding-left: 10px;*/
+  padding-right: 36px;
+
+}
+
+.button-left {
+  padding-left: 90px;
+}
 .button-right p {
   display: inline-block;
   float: right;
 }
 
 .opisfotela {
-padding-right: 100px;
+/*padding-right: 100px;*/
+padding: 0px auto;
+
 text-align: center;
-
-
+font-family: Raleway;
+color:  #000000;
+font-size: 40px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 500;
+line-height: 20.371px;/* Przybliżenie (wynika z podstawienia czcionki) */
+/*text-align: left;*/
+width: 50%;
+float: left;
+margin-left: -5px;
 }
 
 h1 {
   color: black;
   text-transform: uppercase;
   margin-top: 56px;
-  text-align: center;
+  /*text-align: center;*/
   letter-spacing: 2px;
 
-}
-
-
-h2 {
-  font-size: 14px;
-  text-align: center;
-  padding-bottom: 20px;
 }
 
 .button {
   color: white;
   border-radius: 5px;
   background-color: #24baa0;
-  width: 300px;
+  width: 264px;
   padding: 15px 33px;
   text-transform: uppercase;
+  height: 53px;
 }
 
+
+/* z wylaczeniem jednego
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 
 
@@ -196,6 +238,14 @@ margin: 10px 20px 60px;
   padding-bottom: 20px;
 }
 
+.newone{
+
+  right: 1000;
+  font-weight: bold;
+  position: relative;
+
+}
+
 .bold {
   font-weight: bold;
   position: relative;
@@ -204,12 +254,36 @@ margin: 10px 20px 60px;
 
 .bold::after {
   width: 140px;
-  height: 5px;
-  background-color: #24baa0;
+  height: 7px;
+  background-color: #27c7ab;
   position: absolute;
   z-index: 2;
   content: "";
   bottom: -4px;
+  left: 0px;
+
+}
+
+.bold2 {
+  font-weight: bold;
+  position: relative;
+  font-family: Raleway;
+color:  #575757;
+font-size: 22px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 500;
+line-height: 20.371px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: left;
+margin-bottom: 15px;
+}
+
+.bold2::after {
+  width: 320px;
+  height: 8px;
+  background-color: #27c7ab;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  bottom: -8px;
   left: 0px;
 
 }
@@ -229,9 +303,103 @@ margin: 10px 20px 60px;
 }
 /* -------pricelist-------- */
 
+.circle-12 {
+position: relative;
+border: 1px solid #c2c2c2;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: white;
+left: 136px;
+top: -23px;
+
+}
+
+.circle-22 {
+  position: relative;
+  border: 1px solid #c2c2c2;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #c2c2c2;;
+  left: 149px;
+  top: -61px;
+
+
+
+}
+
+.circle-12center {
+position: relative;
+border: 1px solid #27c7ab;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #27c7ab;
+left: 136px;
+top: -23px;
+
+}
+
+.circle-22center {
+  position: relative;
+  border: 1px solid #27c7ab;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;;
+  left: 149px;
+  top: -61px;
+
+}
+
+sup {
+  font-family: Raleway;
+/*color:  #27c7ab;*/
+font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 700;
+line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: right;
+}
+
+
 .pricelist {
   background-color: rgba(194, 194, 194, 0.3)
+  /*margin: 10px 20px 60px;*/
 
+}
+
+
+
+.font-spec1 {
+font-family: Raleway;
+color:  #9e9e9e;
+font-size: 24px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 400;
+line-height: 46px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: center;
+padding-top: 30px;
+}
+
+
+.font-spec2 {
+  font-family: Raleway;
+  color:  #939393;
+  font-size: 24px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 400;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: center;
+  padding-top: 10px;
+}
+
+.font-spec3 {
+  font-family: Raleway;
+  color:  #787878;
+  font-size: 24px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 400;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: center;
+  padding-top: 10px;
 }
 
 .basic-plan, .standard-plan, .advance-plan {
@@ -240,24 +408,197 @@ margin: 10px 20px 60px;
   float: left;
   margin: 150px 27px 75px;
 
+
+}
+
+
+.basic-plan a, .standard-plan a, .advance-plan a {
+
+text-transform: uppercase;
 }
 
 .basic-plan, .advance-plan {
   border: 1px solid #c2c2c2 ;
   border-radius: 3px;
-  background-color: rgba(194, 194, 194, 0.1);
+  background-color: rgb(249, 249, 249);
 
 
 }
 
+
+
+.color1 {
+
+  font-family: 'Raleway';
+  color:  #27c7ab;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: -30px;
+
+}
+
+.color2 {
+
+  font-family: 'Raleway';
+  color:  #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+
+.color3 {
+font-family: Raleway;
+color:  #c2c2c2;
+font-size: 45px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 700;
+line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: right;
+}
+
+.color4 {
+font-family: Raleway;
+color:  #27c7ab;
+font-size: 45px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 700;
+line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: right;
+}
+
+.color5 {
+  font-family: Raleway;
+  color:  #c6c6c6;
+  font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 700;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: right;
+
+}
+
+.color6 {
+
+  font-family: Raleway;
+  color:  #27c7ab;
+  font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 700;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: right;
+
+}
+
+
+.color7 {
+
+background-color: rgb(241, 241, 241);
+
+}
+
+
+.color8 {
+background-color: rgb(228, 228, 228);
+
+}
+
+
+.color9 {
+background-color: rgb(255, 255, 255);
+
+}
+
+.colors-1 li, .colors-2 li, .colors-3 li {
+
+  width: 324px;
+  height: 46px;
+  list-style: none;
+
+}
+
+.button-helper-left {
+  padding: 116px 43px 0px 96px;
+  display: inline-block;
+  width: 100%;
+}
+
+.button-helper-center {
+  padding: 72px 2px 0px 96px;
+  display: inline-block;
+  width: 100%;
+}
+
+.button-helper-right {
+  padding: 28px 43px 0px 96px;
+  display: inline-block;
+  width: 100%;
+}
+
+
+.a1 {
+  border-radius: 8px;
+  background-color:  #27c7ab;
+  width: 122px;
+  height: 34px;
+  text-align: center;
+  margin: 0px auto;
+  color: white;
+      padding: 15px 34px;
+
+
+    /*padding: 15px 33px;*/
+    text-transform: uppercase;
+
+
+}
+
+
+.a2 {
+
+  border-radius: 8px;
+  background-color:  #ffffff;
+  width: 122px;
+  height: 34px;
+  padding: 0 auto;
+}
+
+
+.font1 {
+  font-family: Raleway;
+  color:  #ffffff;
+  font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 500;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  /*text-align: right;*/
+}
+
+
+
+.font2 {
+  font-family: Raleway;
+  color:  #27c7ab;
+  font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 500;
+  line-height: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: right;
+  padding: 15px 34px;
+  width: 50%;
+}
+p {
+
+}
 .standard-plan {
-  background-color: #24baa0;
-  border: 1px solid #24baa0;
+  background-color: #27c7ab;
+  border: 1px solid #27c7ab;
   border-radius: 3px;
 }
 .pricelist-1 {
   position: absolute;
-  left: 147px;
+  left: 80px;
 }
 
 .circle-1 {
@@ -271,7 +612,7 @@ margin: 10px 20px 60px;
 .circle-1 p {
   text-align: center;
   padding-top: 28px;
-  font-size: 49px;
+  /*font-size: 49px;*/
 }
 
 .circle-2 {
@@ -280,12 +621,13 @@ margin: 10px 20px 60px;
   background-color: white;
   border-radius: 50%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .circle-2 p {
   text-align: center;
   padding-top: 28px;
-  font-size: 49px;
+  /*font-size: 49px;*/
 }
 
 .circle-3 {
@@ -294,12 +636,13 @@ margin: 10px 20px 60px;
   background-color: white;
   border-radius: 50%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .circle-3 p {
   text-align: center;
   padding-top: 28px;
-  font-size: 49px;
+  /*font-size: 49px;*/
 }
 
 .colors-1 li:nth-child(1) {
@@ -319,12 +662,185 @@ margin: 10px 20px 60px;
 }
 /* -------formular-------- */
 
-.formualar {
+/*.formualar {
+position: relative;
+}*/
+.czerwone {
+  display: block;
+  margin-left: 10px;
+}
+
+
+
+.lbox-1, .lbox-2 {
+  float: left;
 
 }
 
+.lbox-1 {
+  width: 55%;
+}
+
+.lbox-2 {
+
+  width: 25%;
+  /*padding-right: 300px;*/
+  padding-top: -30px;
+  padding-left: 14px;
+
+}
+
+.box111 {
+  width: 633px;
+  height: 64px;
+
+}
+
+.box222 {
+
+  width: 631px;
+  height: 64px;
+
+}
+
+.box333 {
+  width: 631px;
+  height: 187px;
+
+}
+
+.box111, .box222, .box333 {
+  margin-top: 30px;
+  border-color: rgb(163, 226, 215);
+  padding-left: 10px;
+  font-family: Raleway;
+
+  font-size: 33px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 300;
+  line-height: 20.371px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: left;
+  /*opacity: 0.5;*/
+}
+
+::-webkit-input-placeholder {
+  color: rgba(202, 202, 202, 0.8);
+}
+
+.input-container {
+  width: 343px;
+
+  margin-top: 28px;
+  /*float: left;*/
+}
+
+.input {
+  background: url("../images/form_ok.jpg");
+  width: 14%;
+  box-sizing: border-box;
+  border: 1px solid  #27c7ab;;
+  position: relative;
+  height: 42px;
+  padding: 1px 2px 0px 0px;
+  float: left;
+}
+
+.input-description {
+  width: 86%;
+  position: relative;
+  float: left;
+  padding-left: 14px;
+
+
+}
+
+.input-container p {
+  font-family: Raleway;
+color:  #aeaeae;
+font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+font-weight: 300;
+line-height: 22.37px;/* Przybliżenie (wynika z podstawienia czcionki) */
+text-align: left;
+}
+
+.karimata {
+  margin-top: 100px;
+}
+
+.submit {
+  margin-top: 50px;
+  background-color:  #24baa0;
+  width: 343px;
+  height: 71px;
+  padding: 35px 171px 35px 171px;
+  /*margin-top: 80px;*/
+}
+.submit-font {
+  font-family: Raleway;
+  color:  #ffffff;
+  font-size: 34px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 700;
+  line-height: 20.371px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: left;
+}
 /* -------footer-------- */
 
 .footer {
 
+}
+
+.footer-info {
+  width: 40%;
+  float:left;
+  font-family: Raleway;
+  color:  #9b9b9b;
+  font-size: 16px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 500;
+  line-height: 21.37px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: left;
+}
+
+.footer-blank {
+  width: 16%;
+  float:left;
+}
+
+.footer-social {
+  width: 22%;
+  float:left;
+}
+
+.footer-logo {
+  width: 22%;
+  float:left;
+  font-family: Raleway;
+  color:  #9b9b9b;
+  font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  font-weight: 400;
+  line-height: 21.37px;/* Przybliżenie (wynika z podstawienia czcionki) */
+  text-align: left;
+}
+
+.footer-logo span {
+  font-weight: 700;
+  color: #9b9b9b;
+}
+
+.flickr {
+  width: 32px;
+  height: 32px;
+}
+
+.vimeo {
+  width: 32px;
+  height: 32px;
+}
+
+.pinterest {
+  width: 32px;
+  height: 32px;
+}
+
+.twitter {
+  width: 32px;
+  height: 32px;
 }
